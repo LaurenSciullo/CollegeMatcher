@@ -28,54 +28,13 @@ public class userInputs
 					String countryOrCity = stringInput.nextLine();
 					if (countryOrCity.equals("city"))
 						{
-							System.out.println("Interesting. What is your favorite subject in school? "
-									+ "\n1) Math"
-									+ "\n2) Science"
-									+ "\n3) English"
-									+ "\n4) History"
-									+ "\n5) Language "
-									+ "\n6) Religion"
-									+ "\n7) Art"
-									+ "\n8) PE");
-							int favoriteClass = intInput.nextInt();
-							if (favoriteClass == 1 || favoriteClass == 2)
-								{
+							
 									CollegeData.cityWarmColleges();
-								}
-							else if (favoriteClass == 3 || favoriteClass == 4)
-								{
-									CollegeData.cityWarmColleges();
-								}
-							else 
-								{
-									CollegeData.cityWarmColleges();
-								}
+	
 						}
 					else if (countryOrCity.equals("countryside"))
 						{
-							
-									System.out.println("Interesting. What is your favorite subject in school? "
-											+ "\n1) Math"
-											+ "\n2) Science"
-											+ "\n3) English"
-											+ "\n4) History"
-											+ "\n5) Language "
-											+ "\n6) Religion"
-											+ "\n7) Art"
-											+ "\n8) PE");
-									int favoriteClass = intInput.nextInt();
-									if (favoriteClass == 1 || favoriteClass == 2)
-										{
-											CollegeData.countrysideWarmColleges();
-										}
-									else if (favoriteClass == 3 || favoriteClass == 4)
-										{
-											CollegeData.countrysideWarmColleges();
-										}
-									else 
-										{
-											CollegeData.countrysideWarmColleges();
-										}
+							CollegeData.countrysideWarmColleges();				
 						}
 				}
 			
@@ -85,55 +44,15 @@ public class userInputs
 					String countryOrCity = stringInput.nextLine();
 					if (countryOrCity.equals("city"))
 						{
-							System.out.println("Interesting. What is your favorite subject in school? "
-									+ "\n1) Math"
-									+ "\n2) Science"
-									+ "\n3) English"
-									+ "\n4) History"
-									+ "\n5) Language "
-									+ "\n6) Religion"
-									+ "\n7) Art"
-									+ "\n8) PE");
-							int favoriteClass = intInput.nextInt();
-							if (favoriteClass == 1 || favoriteClass == 2)
-								{
-									CollegeData.cityColdColleges();
-								}
-							else if (favoriteClass == 3 || favoriteClass == 4)
-								{
-									CollegeData.cityColdColleges();
-								}
-							else 
-								{
-									CollegeData.cityColdColleges();
-								}
+							CollegeData.cityColdColleges();
+							
 						}
 					else if (countryOrCity.equals("countryside"))
 						{
-							
-									System.out.println("Interesting. What is your favorite subject in school? "
-											+ "\n1) Math"
-											+ "\n2) Science"
-											+ "\n3) English"
-											+ "\n4) History"
-											+ "\n5) Language "
-											+ "\n6) Religion"
-											+ "\n7) Art"
-											+ "\n8) PE");
-									int favoriteClass = intInput.nextInt();
-									if (favoriteClass == 1 || favoriteClass == 2)
-										{
-											CollegeData.countrysideColdColleges();
-										}
-									else if (favoriteClass == 3 || favoriteClass == 4)
-										{
-											CollegeData.countrysideColdColleges();
-										}
-									else 
-										{
-											CollegeData.countrysideColdColleges();
-										}
+							CollegeData.countrysideColdColleges();
 						}
+								
+						
 				}
 			
 			if (favoriteSeason.equals("Winter"))
@@ -142,54 +61,13 @@ public class userInputs
 					String countryOrCity = stringInput.nextLine();
 					if (countryOrCity.equals("city"))
 						{
-							System.out.println("Interesting. What is your favorite subject in school? "
-									+ "\n1) Math"
-									+ "\n2) Science"
-									+ "\n3) English"
-									+ "\n4) History"
-									+ "\n5) Language "
-									+ "\n6) Religion"
-									+ "\n7) Art"
-									+ "\n8) PE");
-							int favoriteClass = intInput.nextInt();
-							if (favoriteClass == 1 || favoriteClass == 2)
-								{
-									CollegeData.cityColdColleges();
-								}
-							else if (favoriteClass == 3 || favoriteClass == 4)
-								{
-									CollegeData.cityColdColleges();
-								}
-							else 
-								{
-									CollegeData.cityColdColleges();
-								}
+								CollegeData.cityColdColleges();
+						
 						}
 					else if (countryOrCity.equals("countryside"))
 						{
-							
-									System.out.println("Interesting. What is your favorite subject in school? "
-											+ "\n1) Math"
-											+ "\n2) Science"
-											+ "\n3) English"
-											+ "\n4) History"
-											+ "\n5) Language "
-											+ "\n6) Religion"
-											+ "\n7) Art"
-											+ "\n8) PE");
-									int favoriteClass = intInput.nextInt();
-									if (favoriteClass == 1 || favoriteClass == 2)
-										{
-											CollegeData.countrysideColdColleges();
-										}
-									else if (favoriteClass == 3 || favoriteClass == 4)
-										{
-											CollegeData.countrysideColdColleges();
-										}
-									else 
-										{
-											CollegeData.countrysideColdColleges();
-										}
+								CollegeData.countrysideColdColleges();
+									
 						}
 				}
 			
@@ -199,54 +77,13 @@ public class userInputs
 					String countryOrCity = stringInput.nextLine();
 					if (countryOrCity.equals("city"))
 						{
-							System.out.println("Interesting. What is your favorite subject in school? "
-									+ "\n1) Math"
-									+ "\n2) Science"
-									+ "\n3) English"
-									+ "\n4) History"
-									+ "\n5) Language "
-									+ "\n6) Religion"
-									+ "\n7) Art"
-									+ "\n8) PE");
-							int favoriteClass = intInput.nextInt();
-							if (favoriteClass == 1 || favoriteClass == 2)
-								{
-									CollegeData.cityWarmColleges();
-								}
-							else if (favoriteClass == 3 || favoriteClass == 4)
-								{
-									CollegeData.cityWarmColleges();
-								}
-							else 
-								{
-									CollegeData.cityWarmColleges();
-								}
+							CollegeData.cityWarmColleges();
+							
 						}
 					else if (countryOrCity.equals("countryside"))
 						{
-							
-									System.out.println("Interesting. What is your favorite subject in school? "
-											+ "\n1) Math"
-											+ "\n2) Science"
-											+ "\n3) English"
-											+ "\n4) History"
-											+ "\n5) Language "
-											+ "\n6) Religion"
-											+ "\n7) Art"
-											+ "\n8) PE");
-									int favoriteClass = intInput.nextInt();
-									if (favoriteClass == 1 || favoriteClass == 2)
-										{
-											CollegeData.countrysideWarmColleges();
-										}
-									else if (favoriteClass == 3 || favoriteClass == 4)
-										{
-											CollegeData.countrysideWarmColleges();
-										}
-									else 
-										{
-											CollegeData.countrysideWarmColleges();
-										}
+								CollegeData.countrysideWarmColleges();
+									
 						}
 				}
 			
