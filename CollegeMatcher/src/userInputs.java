@@ -1,5 +1,9 @@
 import java.util.Scanner;
 
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public class userInputs
 	{
 		 static Scanner stringInput = new Scanner (System.in);
@@ -23,6 +27,10 @@ public class userInputs
 			
 			if (favoriteSeason.equals("Summer"))
 				{
+					JFrame frame = new JFrame();
+					ImageIcon summer = new ImageIcon(("summer.jpg"));
+					JOptionPane.showMessageDialog(frame, summer);
+					
 					System.out.println("Summer and... sun!! Do you like the city or the countryside?");
 					String countryOrCity = stringInput.nextLine();
 					if (countryOrCity.equals("city"))
