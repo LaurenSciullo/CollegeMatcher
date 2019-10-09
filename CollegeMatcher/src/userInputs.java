@@ -13,13 +13,12 @@ public class userInputs
 			
 			
 			likes();
-			dislikes();
 			
 		}
 		
 		public static void likes()
 		{
-			System.out.println(name + ", what is your favorite season of the year? Please enter your answer with the first letter capitalized:");
+			System.out.println(name + ", what is your favorite season of the year? Winter, Spring, Summer, or Fall?");
 			String favoriteSeason = stringInput.nextLine();
 			
 			if (favoriteSeason.equals("Summer"))
@@ -91,10 +90,7 @@ public class userInputs
 		
 		}
 		
-		public static void dislikes()
-		{
-			
-		}
+		
 		
 		
 
