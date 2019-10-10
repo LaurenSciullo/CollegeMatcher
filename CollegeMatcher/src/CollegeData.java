@@ -1,26 +1,26 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+
 public class CollegeData
 	{
 		static ArrayList <CollegeInputs> colleges = new ArrayList <CollegeInputs>();
 		static Scanner intInput = new Scanner(System.in);
 		static Scanner doubleInput = new Scanner(System.in);
+		static JFrame frame = new JFrame();
+		static String name;
 		
 		public static void cityWarmColleges()
 		{
+			Object[] subjects = {"Math", "Science", "English", "History", "Language", "Religion", "Art", "PE"};
+			int favoriteClass  = JOptionPane.showOptionDialog(frame, "What is your favorite subject?",
+					 name, JOptionPane.YES_NO_CANCEL_OPTION,
+					JOptionPane.QUESTION_MESSAGE,
+					null, subjects, subjects [7]);
 			
-			System.out.println("\nWhat is your favorite subject in school? "
-					+ "\n1) Math"
-					+ "\n2) Science"
-					+ "\n3) English"
-					+ "\n4) History"
-					+ "\n5) Language "
-					+ "\n6) Religion"
-					+ "\n7) Art"
-					+ "\n8) PE");
-			int favoriteClass = intInput.nextInt();
-			if (favoriteClass == 1 || favoriteClass == 2)
+			if (favoriteClass == 0 || favoriteClass == 1)
 				{
 					System.out.println("Warm large city colleges!");
 					System.out.println("What is your gpa?");
@@ -40,7 +40,7 @@ public class CollegeData
 					
 					
 				}
-			else if (favoriteClass == 3 || favoriteClass == 4)
+			else if (favoriteClass == 2 || favoriteClass == 3)
 				{
 					System.out.println("Warm large city colleges!");
 					System.out.println("What is your gpa?");
@@ -83,18 +83,13 @@ public class CollegeData
 		
 		public static void countrysideWarmColleges()
 		{
+			Object[] subjects = {"Math", "Science", "English", "History", "Language", "Religion", "Art", "PE"};
+			int favoriteClass  = JOptionPane.showOptionDialog(frame, "What is your favorite subject?",
+					 name, JOptionPane.YES_NO_CANCEL_OPTION,
+					JOptionPane.QUESTION_MESSAGE,
+					null, subjects, subjects [7]);
 			
-			System.out.println("\nWhat is your favorite subject in school? "
-					+ "\n1) Math"
-					+ "\n2) Science"
-					+ "\n3) English"
-					+ "\n4) History"
-					+ "\n5) Language "
-					+ "\n6) Religion"
-					+ "\n7) Art"
-					+ "\n8) PE");
-			int favoriteClass = intInput.nextInt();
-			if (favoriteClass == 1 || favoriteClass == 2)
+			if (favoriteClass == 0 || favoriteClass == 1)
 				{
 					System.out.println("Warm countryside colleges!");
 					System.out.println("What is your gpa?");
@@ -113,7 +108,7 @@ public class CollegeData
 						}
 					
 				}
-			else if (favoriteClass == 3 || favoriteClass == 4)
+			else if (favoriteClass == 2 || favoriteClass == 3)
 				{
 					System.out.println("Warm countryside colleges!");
 					System.out.println("What is your gpa?");
@@ -156,18 +151,13 @@ public class CollegeData
 		
 		public static void cityColdColleges()
 		{
+			Object[] subjects = {"Math", "Science", "English", "History", "Language", "Religion", "Art", "PE"};
+			int favoriteClass  = JOptionPane.showOptionDialog(frame, "What is your favorite subject?",
+					 name, JOptionPane.YES_NO_CANCEL_OPTION,
+					JOptionPane.QUESTION_MESSAGE,
+					null, subjects, subjects [7]);
 			
-			System.out.println("\nWhat is your favorite subject in school? "
-					+ "\n1) Math"
-					+ "\n2) Science"
-					+ "\n3) English"
-					+ "\n4) History"
-					+ "\n5) Language "
-					+ "\n6) Religion"
-					+ "\n7) Art"
-					+ "\n8) PE");
-			int favoriteClass = intInput.nextInt();
-			if (favoriteClass == 1 || favoriteClass == 2)
+			if (favoriteClass == 0 || favoriteClass == 1)
 				{
 					System.out.println("Cold large city colleges!");
 					System.out.println("What is your gpa?");
@@ -186,7 +176,7 @@ public class CollegeData
 						}
 					
 				}
-			else if (favoriteClass == 3 || favoriteClass == 4)
+			else if (favoriteClass == 2 || favoriteClass == 3)
 				{
 					System.out.println("Cold large city colleges!");
 					System.out.println("What is your gpa?");
@@ -229,18 +219,13 @@ public class CollegeData
 		
 		public static void countrysideColdColleges()
 			{
+				Object[] subjects = {"Math", "Science", "English", "History", "Language", "Religion", "Art", "PE"};
+				int favoriteClass  = JOptionPane.showOptionDialog(frame, "What is your favorite subject?",
+						 name, JOptionPane.YES_NO_CANCEL_OPTION,
+						JOptionPane.QUESTION_MESSAGE,
+						null, subjects, subjects [7]);
 				
-				System.out.println("\nWhat is your favorite subject in school? "
-						+ "\n1) Math"
-						+ "\n2) Science"
-						+ "\n3) English"
-						+ "\n4) History"
-						+ "\n5) Language "
-						+ "\n6) Religion"
-						+ "\n7) Art"
-						+ "\n8) PE");
-				int favoriteClass = intInput.nextInt();
-				if (favoriteClass == 1 || favoriteClass == 2)
+				if (favoriteClass == 0 || favoriteClass == 1)
 					{
 						System.out.println("Cold countryside colleges!");
 						System.out.println("What is your gpa?");
@@ -258,7 +243,7 @@ public class CollegeData
 								System.out.println(colleges.get(0).getUniversities());
 							}
 					}
-				else if (favoriteClass == 3 || favoriteClass == 4)
+				else if (favoriteClass == 2 || favoriteClass == 3)
 					{
 						System.out.println("Cold countryside colleges!");
 						System.out.println("What is your gpa?");

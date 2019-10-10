@@ -9,11 +9,13 @@ public class userInputs
 		 static Scanner stringInput = new Scanner (System.in);
 		 static Scanner intInput = new Scanner (System.in);
 		 static String name;
+		 static JFrame frame = new JFrame();
+		 static int favoriteSeason;
 		 
 		public static void userData()
 		{
-			System.out.println("Hello and welcome to the College Matcher! Please enter your name: ");
-			 name = stringInput.nextLine();		
+			JOptionPane.showMessageDialog(frame, "Hello and welcome to the College Matcher! ");
+			 name = JOptionPane.showInputDialog("Please enter your name:");		
 			
 			
 			likes();
@@ -22,76 +24,123 @@ public class userInputs
 		
 		public static void likes()
 		{
-			System.out.println(name + ", what is your favorite season of the year? Winter, Spring, Summer, or Fall?");
-			String favoriteSeason = stringInput.nextLine();
 			
-			if (favoriteSeason.equals("Summer"))
+			Object[] options = {"Spring", "Summer", "Fall", "Winter"};
+			favoriteSeason = JOptionPane.showOptionDialog(frame, name + ", what is your favorite season of the year?",
+					 name, JOptionPane.YES_NO_CANCEL_OPTION,
+					JOptionPane.QUESTION_MESSAGE,
+					null, options, options[3]);
+			
+			//Summer:
+			if (favoriteSeason == 1)
 				{
-					JFrame frame = new JFrame();
+					
 					ImageIcon summer = new ImageIcon(("summer.jpg"));
 					JOptionPane.showMessageDialog(frame, summer);
 					
-					System.out.println("Summer and... sun!! Do you like the city or the countryside?");
-					String countryOrCity = stringInput.nextLine();
-					if (countryOrCity.equals("city"))
+					JOptionPane.showMessageDialog(frame, "Summer and... sun!! ");
+					Object[] cityOrCountry = {"city", "country"};
+					int countryOrCity  = JOptionPane.showOptionDialog(frame, "Do you like the city or the countryside?",
+							 name, JOptionPane.YES_NO_CANCEL_OPTION,
+							JOptionPane.QUESTION_MESSAGE,
+							null, cityOrCountry, cityOrCountry[1]);
+					
+					
+					if (countryOrCity == 0)
 						{
 							
 									CollegeData.cityWarmColleges();
 	
 						}
-					else if (countryOrCity.equals("countryside"))
+					else if (countryOrCity == 1)
 						{
 							CollegeData.countrysideWarmColleges();				
 						}
 				}
-			
-			if (favoriteSeason.equals("Fall"))
+			//Fall:
+			if (favoriteSeason == 2 )
 				{
-					System.out.println("Fall and... frosting!! Do you like the city or the countryside?");
-					String countryOrCity = stringInput.nextLine();
-					if (countryOrCity.equals("city"))
+					
+					ImageIcon fall = new ImageIcon(("fall.jpg"));
+					JOptionPane.showMessageDialog(frame, fall);
+					
+					JOptionPane.showMessageDialog(frame, "Fall and... frosting!! ");
+					Object[] cityOrCountry = {"city", "country"};
+					int countryOrCity  = JOptionPane.showOptionDialog(frame, "Do you like the city or the countryside?",
+							 name, JOptionPane.YES_NO_CANCEL_OPTION,
+							JOptionPane.QUESTION_MESSAGE,
+							null, cityOrCountry, cityOrCountry[1]);
+					
+					
+					if (countryOrCity == 0)
 						{
-							CollegeData.cityColdColleges();
 							
+									CollegeData.cityColdColleges();
+	
 						}
-					else if (countryOrCity.equals("countryside"))
+					else if (countryOrCity == 1)
 						{
-							CollegeData.countrysideColdColleges();
+							CollegeData.countrysideColdColleges();				
 						}
+					
 								
 						
 				}
-			
-			if (favoriteSeason.equals("Winter"))
+			//Winter:
+			if (favoriteSeason == 3)
 				{
-					System.out.println("Winter and... wilting!! Do you like the city or the countryside?");
-					String countryOrCity = stringInput.nextLine();
-					if (countryOrCity.equals("city"))
+					
+					ImageIcon winter = new ImageIcon(("winter.png"));
+					JOptionPane.showMessageDialog(frame, winter);
+					
+					JOptionPane.showMessageDialog(frame, "Winter and... wilting!! ");
+					Object[] cityOrCountry = {"city", "country"};
+					int countryOrCity  = JOptionPane.showOptionDialog(frame, "Do you like the city or the countryside?",
+							 name, JOptionPane.YES_NO_CANCEL_OPTION,
+							JOptionPane.QUESTION_MESSAGE,
+							null, cityOrCountry, cityOrCountry[1]);
+					
+					
+					if (countryOrCity == 0)
 						{
-								CollegeData.cityColdColleges();
-						
-						}
-					else if (countryOrCity.equals("countryside"))
-						{
-								CollegeData.countrysideColdColleges();
-									
-						}
-				}
-			
-			if (favoriteSeason.equals("Spring"))
-				{
-					System.out.println("Spring and... surprise!! Do you like the city or the countryside?");
-					String countryOrCity = stringInput.nextLine();
-					if (countryOrCity.equals("city"))
-						{
-							CollegeData.cityWarmColleges();
 							
+									CollegeData.cityColdColleges();
+	
 						}
-					else if (countryOrCity.equals("countryside"))
+					else if (countryOrCity == 1)
 						{
-								CollegeData.countrysideWarmColleges();
-									
+							CollegeData.countrysideColdColleges();				
 						}
+					
+					
+				}
+			//Spring:
+			if (favoriteSeason == 0)
+				{
+					
+					ImageIcon spring = new ImageIcon(("spring.jpg"));
+					JOptionPane.showMessageDialog(frame, spring);
+					
+					JOptionPane.showMessageDialog(frame, "Spring and... surprise!! ");
+					Object[] cityOrCountry = {"city", "country"};
+					int countryOrCity  = JOptionPane.showOptionDialog(frame, "Do you like the city or the countryside?",
+							 name, JOptionPane.YES_NO_CANCEL_OPTION,
+							JOptionPane.QUESTION_MESSAGE,
+							null, cityOrCountry, cityOrCountry[1]);
+					
+					
+					if (countryOrCity == 0)
+						{
+							
+									CollegeData.cityWarmColleges();
+	
+						}
+					else if (countryOrCity == 1)
+						{
+							CollegeData.countrysideWarmColleges();				
+						}
+					
+					
 				}
 			
 			
